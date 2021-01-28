@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.FullName = void 0;
 var fullName = '仁和 活貴';
 console.log(fullName); // 仁和 活貴
 var tokens = fullName.split(' ');
@@ -29,7 +32,17 @@ var FullName = /** @class */ (function () {
         enumerable: false,
         configurable: true
     });
+    // lastNameを変更できてしまうメソッド
+    // 邪悪
+    FullName.prototype.changeLastName = function (str) {
+        this._lastName = str;
+    };
+    // 与えられたFullNameインスタンスと比較して等価かどうかチェックするメソッド
+    FullName.prototype.equals = function (instance) {
+        return instance.firstName === this.firstName && instance.lastName === this.lastName;
+    };
     return FullName;
 }());
-var fullNameInstance = new FullName('山田', '太郎');
-console.log(fullNameInstance.lastName);
+exports.FullName = FullName;
+var fullNameObject = new FullName('山田', '太郎');
+console.log(fullNameObject.lastName); // 太郎

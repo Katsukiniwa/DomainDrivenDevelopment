@@ -13,7 +13,7 @@ const foreginTokens = foreignFullName.split(' ');
 console.log(foreginTokens[0]); // john
 
 // そこでオブジェクト指向を用いる
-class FullName {
+export class FullName {
   public _firstName: string;
   public _lastName: string;
 
@@ -28,6 +28,17 @@ class FullName {
 
   get lastName(): string {
     return this._lastName;
+  }
+
+  // lastNameを変更できてしまうメソッド
+  // 邪悪
+  public changeLastName(str: string) {
+    this._lastName = str;
+  }
+
+  // 与えられたFullNameインスタンスと比較して等価かどうかチェックするメソッド
+  public equals(instance: FullName) {
+    return instance.firstName === this.firstName && instance.lastName === this.lastName;
   }
 }
 
