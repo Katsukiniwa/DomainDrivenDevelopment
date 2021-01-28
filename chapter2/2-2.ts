@@ -1,4 +1,3 @@
-import { couldStartTrivia } from 'typescript';
 import { FullName } from './2-1';
 
 let greet = 'こんにちは';
