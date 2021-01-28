@@ -1,0 +1,22 @@
+{
+  "name": "domaindrivendevelopment",
+  "version": "1.0.0",
+  "description": "[ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本](https://www.shoeisha.co.jp/book/detail/9784798150727)を勉強するリポジトリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katsukiniwa/DomainDrivenDevelopment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Katsukiniwa/DomainDrivenDevelopment/issues"
+  },
+  "homepage": "https://github.com/Katsukiniwa/DomainDrivenDevelopment#readme",
+  "dependencies": {
+    "typescript": "^4.1.3"
+  }
+}
