@@ -1,3 +1,5 @@
+import { UserId } from './3-2';
+
 class User {
   private readonly id: UserId; // 識別子
   private name: string;

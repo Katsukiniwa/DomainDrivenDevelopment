@@ -1,4 +1,4 @@
-class UserId {
+export class UserId {
   private value: string;
 
   constructor(value: string) {
